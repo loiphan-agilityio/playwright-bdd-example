@@ -1,6 +1,10 @@
 name: Playwright Tests
 on:
-  deployment_status:
+  push:
+    branches:
+      - dev
+      - stag
+      - main
 jobs:
   test:
     timeout-minutes: 60
